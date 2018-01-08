@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Garage
+comment1.params=size\ entry
+comment1.target=Garage(int,\ boolean)
+numComments=2
