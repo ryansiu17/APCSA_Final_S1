@@ -11,13 +11,18 @@ public class Car implements Comparable<Car>{
     //Constructor and ToString
     public Car(){
         this.setModel();
-        System.out.println("Year?");
-        this.setYear(scan.nextInt());
+        this.setYear();
         this.setColor();
-        
+        totalCars++;
+    }
+    public Car(String mod, int yr, String col){
+        this.model = mod;
+        this.year = yr;
+        this.color = col;
+        totalCars++;
     }
     public String toString(){
-        return "A " + color + " " + year + " " + model;
+        return "A " + this.color + " " + this.year + " " + this.model;
     }
     
     
@@ -31,8 +36,18 @@ public class Car implements Comparable<Car>{
         print("Color?");
         this.color = scan.next();
     }
-    public void setYear(int y){
-        this.year = y;
+    public void setYear(){
+        print("Color?");
+        this.color = scan.next();
+    }
+    public void setModel(String mod){
+        this.model = mod;
+    }
+    public void setColor(String col){
+        this.color = col;
+    }
+    public void setYear(int yr){
+        this.year = yr;
     }
     public String getModel(){
         return this.model;
