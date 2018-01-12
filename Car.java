@@ -37,8 +37,8 @@ public class Car implements Comparable<Car>{
         this.color = scan.next();
     }
     public void setYear(){
-        print("Color?");
-        this.color = scan.next();
+        print("Year?");
+        this.year = scan.nextInt();
     }
     public void setModel(String mod){
         this.model = mod;
